@@ -141,10 +141,7 @@ async function main(query: string) {
     temperature: 0,
   })
 
-  const response = app.invoke({
-    llm,
-    query,
-  })
+  const response = app.invoke({ llm, query })
 
   console.log(response)
 
